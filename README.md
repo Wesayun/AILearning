@@ -1,14 +1,17 @@
 # AILearning  
 ## Python基础  
+### Python语法速通
 - 类的基础  
-  ClassBasic.py  
+  class_basic.py  
 - 模拟"前向传播"和"计算损失"  
-  PredictBasic.py  
+  predict_basic.py  
   用列表推导式计算每个预测值的"误差平方" (y_pred - y_true)²
+### AI专属工具库
+#### Numpy
 - Numpy入门-数组与矩阵  
-  ArrayMatrix.py  
+  array_matrix.py  
 - Numpy进阶-矩阵乘法  
-  MatrixMultiply.py  
+  matrix_multiply.py  
   teply.py
 
   NumPy更快：
@@ -23,19 +26,19 @@
     2. 循环由Python解释器逐行执行（慢）;  
     3. 每个元素是独立的Python对象（内存不连续）;
     4. 每次加法都创建新对象;  
-
+#### Matplotlib
 - Matplotlib-损失曲线  
-  LossCurve.py  
+  loss_curve.py  
 - 字典实现两数之和与反转链表  
-  TwoSum.py  
-  ReversLinkedList.py  
+  two_sum.py  
+  revers_LinkedList.py  
 - 异常+文件读写  
-  ReadFile.py  
-  HandleException.py  
+  read_file.py  
+  handle_exception.py  
 - 单神经元网络  
-  NeuronNetwork.py  
+  neuron_network.py  
 
-- 几个概念：  
+#### 前向传播、损失函数、梯度下降：  
   - **前向传播:** 输入数据从输入层进入网络，逐层计算，最终输出预测结果的过程。  
 
           数学描述：对于单神经元网络，假设输入是x, 权重是w, 偏置是b, 激活函数是f: 输出 = f ( w * x + b )	。  
@@ -57,4 +60,6 @@
   
   - 整个**训练过程**就是：    
       - 前向传播做预测 → 损失函数算差距 → 梯度下降更新参数 → 重复直到损失足够小。  
+
+
 
