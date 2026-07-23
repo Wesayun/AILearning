@@ -11,13 +11,13 @@ import backpropagation as back
 import evaluate_accuracy as acc
 
 mnist = datasets.MNIST(root='./data', train=True, download=True)
-X = mnist.data.numpy()[:1000].astype(np.float32) / 255.0    # 60000张训练图片
-y = mnist.targets[:1000].long()           # 60000个训练标签
+X = mnist.data.numpy()[:].astype(np.float32) / 255.0    # 60000张训练图片
+y = mnist.targets[:].long()           # 60000个训练标签
 X_flat = X.reshape(X.shape[0], -1) 
 
 the_net = tln.two_layer_nn()
 
-lr = 0.001
+lr = 0.00001
 
 try:
     epochs = int(input('请输入训练轮数：'))
