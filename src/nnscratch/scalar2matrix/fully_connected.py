@@ -4,7 +4,7 @@ class LinearLayer:
         # 初始化权重
         # input_size 输入的特征数量
         # output_size 输出的类别数量
-        self.W = np.random.randn(input_size, output_size) * 0.01
+        self.W = np.random.randn(input_size, output_size) * 0.001
         self.b = np.zeros(output_size)
     
     def forward(self, X):
